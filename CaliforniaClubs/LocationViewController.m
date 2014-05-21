@@ -95,6 +95,10 @@
         // if there is already a gradient assigned - replace it instead of adding one
         else
             [b.layer replaceSublayer:[b.layer.sublayers objectAtIndex:0] with:grad];
+
+        // hide the "previous location" button; we no longer need it
+        if (i==3)
+            b.hidden = YES;
     }
 }
 
@@ -104,8 +108,29 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation
+{
+    // this one is for iOS 5 only (my real iPad)
+    NSLog(@">> didUpdateToLocation:fromLocation:");
+
+    currentLocation = newLocation;
+    
+    NSLog(@"latitude %+.6f, longitude %+.6f\n",
+          currentLocation.coordinate.latitude,
+          currentLocation.coordinate.longitude);
+    
+    [self.locationManager stopUpdatingLocation];
+    // [self.locationManager setDelegate:nil];
+    
+    // assign the distances from the current location
+    [self computeAllClubDistances:currentLocation];
+    [self performSegueWithIdentifier:@"currentLocationSegue" sender:self];
+}
+
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
+    NSLog(@">> didUpdateLocations");
     currentLocation = [locations lastObject];
     
     NSLog(@"latitude %+.6f, longitude %+.6f\n",
@@ -113,7 +138,7 @@
           currentLocation.coordinate.longitude);
     
     [self.locationManager stopUpdatingLocation];
-    [self.locationManager setDelegate:nil];
+    // [self.locationManager setDelegate:nil];
 
     // assign the distances from the current location
     [self computeAllClubDistances:currentLocation];
@@ -194,10 +219,24 @@
     [b.layer replaceSublayer:[b.layer.sublayers objectAtIndex:0] with:grad];
 }
 
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    // The location "unknown" error simply means the manager is currently unable to get the location.
+    // We can ignore this error for the scenario of getting a single location fix, because we already have a
+    // timeout that will stop the location manager to save power.
+    NSLog(@"%@",[error localizedDescription]);
+    if ([error code] != kCLErrorLocationUnknown) {
+        [self.locationManager stopUpdatingLocation]; // :NSLocalizedString(@"Error", @"Error")];
+    }
+}
+
 - (IBAction)doCurrentLocation:(id)sender
 {
     [self recolorButton:sender];
     
+    if(locationManager.locationServicesEnabled == NO){
+        NSLog(@"Location services not enabled");
+    }
+
     // UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Current Location" message:@"Current Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
     // [alert show];
     NSLog(@"%s", "Current Location");

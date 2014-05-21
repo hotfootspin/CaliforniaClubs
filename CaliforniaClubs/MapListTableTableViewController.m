@@ -177,8 +177,8 @@
     NSString *title, *subtitle;
     if (bShowNearby) {
         club = [sortedClubs objectAtIndex:index];
-        title = [NSString stringWithFormat:@"%@, %@, %@, %@", [club club], [club city], [club level], [club dayofweek]];
-        subtitle = [NSString stringWithFormat:@"%4.0f miles %@ (as the crow flies)", [club distance]/1609.0, [club direction]];
+        title = [NSString stringWithFormat:@"%@, %@, %@", [club club], [club level], [club dayofweek]];
+        subtitle = [NSString stringWithFormat:@"%@, %0.0f miles %@", [club city], [club distance]/1609.0, [club direction]];
     }
     else {
         club = [[[Data sharedClubData] getClubs] objectAtIndex:index];

@@ -15,5 +15,8 @@
 @property (nonatomic, assign) BOOL bBeenHere;
 @property (nonatomic, assign) BOOL bWantToGo;
 @property (weak, nonatomic) IBOutlet UINavigationItem *clubName;
+@property (weak, nonatomic) IBOutlet UILabel *topLabel;
+@property (weak, nonatomic) IBOutlet UIButton *btnWeb;
+- (IBAction)goWeb:(id)sender;
 
 @end

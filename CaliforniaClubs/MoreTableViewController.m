@@ -21,6 +21,8 @@
 @synthesize bBeenHere;
 @synthesize bWantToGo;
 @synthesize clubName;
+@synthesize topLabel;
+@synthesize btnWeb;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -36,8 +38,41 @@
     [super viewDidLoad];
     
     clubName.title = [club club];
+    topLabel.text = [club club];
     
+    [btnWeb.layer setMasksToBounds:YES];
+    [btnWeb.layer setCornerRadius:8.0f];
+    [btnWeb.layer setBorderColor:[UIColor whiteColor].CGColor];
+    [btnWeb.layer setBorderWidth:1.0f];
+    
+    CAGradientLayer *grad = [CAGradientLayer layer];
+    [grad setBounds:btnWeb.bounds];
+    NSArray *colors = [NSArray arrayWithObjects:
+                       (id) [UIColor colorWithRed:0.8 green:0.1 blue:0.1 alpha:1.0f].CGColor, // top
+                       (id) [UIColor colorWithRed:0.6 green:0.1 blue:0.1 alpha:1.0f].CGColor, // bottom
+                       nil];
+    /*
+    if ([club web].length < 1) {
+        colors = [NSArray arrayWithObjects:
+                           (id) [UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:1.0f].CGColor, // top
+                           (id) [UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:1.0f].CGColor, // bottom
+                           nil];
+    }
+     */
+    [grad setPosition:CGPointMake([btnWeb bounds].size.width / 2, [btnWeb bounds].size.height / 2)];
+    [grad setColors:colors];
+    
+    // if we never assigned a gradient before
+    if ([btnWeb.layer.sublayers count] < 1)
+        [btnWeb.layer insertSublayer:grad atIndex:0];
+    // if there is already a gradient assigned - replace it instead of adding one
+    else
+        [btnWeb.layer replaceSublayer:[btnWeb.layer.sublayers objectAtIndex:0] with:grad];
 
+    if ([club web].length < 1) {
+        btnWeb.userInteractionEnabled = NO;
+        btnWeb.hidden = YES;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -135,6 +170,7 @@
             cell.detailTextLabel.text = [club web];
             if ([[club web] length] > 5) {
                 // put clickable code here
+                
             }
             break;
             
@@ -200,4 +236,7 @@
 }
 */
 
+- (IBAction)goWeb:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: [club web]]];
+}
 @end
