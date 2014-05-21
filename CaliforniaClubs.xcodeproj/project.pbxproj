@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D07063F18FFAF120006D518 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07063E18FFAF120006D518 /* MapViewController.m */; };
+		5D359D7118FEE45B00F2B14A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D359D7018FEE45B00F2B14A /* Foundation.framework */; };
+		5D359D7318FEE45B00F2B14A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D359D7218FEE45B00F2B14A /* CoreGraphics.framework */; };
+		5D359D7518FEE45B00F2B14A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D359D7418FEE45B00F2B14A /* UIKit.framework */; };
+		5D359D7718FEE45B00F2B14A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D359D7618FEE45B00F2B14A /* CoreData.framework */; };
+		5D359D7D18FEE45B00F2B14A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D359D7B18FEE45B00F2B14A /* InfoPlist.strings */; };
+		5D359D7F18FEE45B00F2B14A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D359D7E18FEE45B00F2B14A /* main.m */; };
+		5D359D8318FEE45B00F2B14A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D359D8218FEE45B00F2B14A /* AppDelegate.m */; };
+		5D359D8618FEE45B00F2B14A /* CaliforniaClubs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D359D8418FEE45B00F2B14A /* CaliforniaClubs.xcdatamodeld */; };
+		5D359D8818FEE45B00F2B14A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D359D8718FEE45B00F2B14A /* Images.xcassets */; };
+		5D359D8F18FEE45B00F2B14A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D359D8E18FEE45B00F2B14A /* XCTest.framework */; };
+		5D359D9018FEE45B00F2B14A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D359D7018FEE45B00F2B14A /* Foundation.framework */; };
+		5D359D9118FEE45B00F2B14A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D359D7418FEE45B00F2B14A /* UIKit.framework */; };
+		5D359D9218FEE45B00F2B14A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D359D7618FEE45B00F2B14A /* CoreData.framework */; };
+		5D359D9A18FEE45B00F2B14A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D359D9818FEE45B00F2B14A /* InfoPlist.strings */; };
+		5D359D9C18FEE45B00F2B14A /* CaliforniaClubsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D359D9B18FEE45B00F2B14A /* CaliforniaClubsTests.m */; };
+		5D359DA618FEE62200F2B14A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D359DA518FEE62200F2B14A /* Storyboard.storyboard */; };
+		5D359DA918FF0C8D00F2B14A /* MapListTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D359DA818FF0C8D00F2B14A /* MapListTableTableViewController.m */; };
+		5D359DAC18FF158200F2B14A /* Club.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D359DAB18FF158200F2B14A /* Club.m */; };
+		5D5D4504190B82F90094B0D5 /* Storyboard_ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5D4503190B82F90094B0D5 /* Storyboard_ipad.storyboard */; };
+		5D79FE6D190F06C800F6B574 /* UserClubBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D79FE6C190F06C800F6B574 /* UserClubBookmark.m */; };
+		5D79FE70190F83FD00F6B574 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D79FE6F190F83FD00F6B574 /* HomeViewController.m */; };
+		5D9E5DBB1900EF0000E5A9EE /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E5DBA1900EF0000E5A9EE /* Data.m */; };
+		5DA395681903850B009C0B3B /* MBMapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA395671903850B009C0B3B /* MBMapPin.m */; };
+		5DA3956A1903853E009C0B3B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA395691903853E009C0B3B /* MapKit.framework */; };
+		5DA3956C19038547009C0B3B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA3956B19038547009C0B3B /* CoreLocation.framework */; };
+		5DA3956F19038795009C0B3B /* PinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3956E19038795009C0B3B /* PinViewController.m */; };
+		5DAB0F3D190C6735001C3637 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAB0F3C190C6735001C3637 /* LocationViewController.m */; };
+		5DC06A1819079C6000B4CD96 /* MoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC06A1719079C6000B4CD96 /* MoreTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D359D9318FEE45B00F2B14A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D359D6518FEE45B00F2B14A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D359D6C18FEE45B00F2B14A;
+			remoteInfo = CaliforniaClubs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D07063D18FFAF120006D518 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		5D07063E18FFAF120006D518 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		5D359D6D18FEE45B00F2B14A /* CaliforniaClubs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaliforniaClubs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D359D7018FEE45B00F2B14A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5D359D7218FEE45B00F2B14A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5D359D7418FEE45B00F2B14A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5D359D7618FEE45B00F2B14A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5D359D7A18FEE45B00F2B14A /* CaliforniaClubs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CaliforniaClubs-Info.plist"; sourceTree = "<group>"; };
+		5D359D7C18FEE45B00F2B14A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D359D7E18FEE45B00F2B14A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D359D8018FEE45B00F2B14A /* CaliforniaClubs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CaliforniaClubs-Prefix.pch"; sourceTree = "<group>"; };
+		5D359D8118FEE45B00F2B14A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5D359D8218FEE45B00F2B14A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5D359D8518FEE45B00F2B14A /* CaliforniaClubs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CaliforniaClubs.xcdatamodel; sourceTree = "<group>"; };
+		5D359D8718FEE45B00F2B14A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5D359D8D18FEE45B00F2B14A /* CaliforniaClubsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaliforniaClubsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D359D8E18FEE45B00F2B14A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5D359D9718FEE45B00F2B14A /* CaliforniaClubsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CaliforniaClubsTests-Info.plist"; sourceTree = "<group>"; };
+		5D359D9918FEE45B00F2B14A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D359D9B18FEE45B00F2B14A /* CaliforniaClubsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaliforniaClubsTests.m; sourceTree = "<group>"; };
+		5D359DA518FEE62200F2B14A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		5D359DA718FF0C8D00F2B14A /* MapListTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapListTableTableViewController.h; sourceTree = "<group>"; };
+		5D359DA818FF0C8D00F2B14A /* MapListTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapListTableTableViewController.m; sourceTree = "<group>"; };
+		5D359DAA18FF158200F2B14A /* Club.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Club.h; sourceTree = "<group>"; };
+		5D359DAB18FF158200F2B14A /* Club.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Club.m; sourceTree = "<group>"; };
+		5D5D4503190B82F90094B0D5 /* Storyboard_ipad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_ipad.storyboard; sourceTree = "<group>"; };
+		5D79FE6B190F06C800F6B574 /* UserClubBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserClubBookmark.h; sourceTree = "<group>"; };
+		5D79FE6C190F06C800F6B574 /* UserClubBookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserClubBookmark.m; sourceTree = "<group>"; };
+		5D79FE6E190F83FD00F6B574 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		5D79FE6F190F83FD00F6B574 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		5D9E5DB91900EF0000E5A9EE /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		5D9E5DBA1900EF0000E5A9EE /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
+		5DA395661903850B009C0B3B /* MBMapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBMapPin.h; sourceTree = "<group>"; };
+		5DA395671903850B009C0B3B /* MBMapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBMapPin.m; sourceTree = "<group>"; };
+		5DA395691903853E009C0B3B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5DA3956B19038547009C0B3B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5DA3956D19038795009C0B3B /* PinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinViewController.h; sourceTree = "<group>"; };
+		5DA3956E19038795009C0B3B /* PinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinViewController.m; sourceTree = "<group>"; };
+		5DAB0F3B190C6735001C3637 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		5DAB0F3C190C6735001C3637 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		5DC06A1619079C6000B4CD96 /* MoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreTableViewController.h; sourceTree = "<group>"; };
+		5DC06A1719079C6000B4CD96 /* MoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D359D6A18FEE45B00F2B14A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA3956C19038547009C0B3B /* CoreLocation.framework in Frameworks */,
+				5DA3956A1903853E009C0B3B /* MapKit.framework in Frameworks */,
+				5D359D7318FEE45B00F2B14A /* CoreGraphics.framework in Frameworks */,
+				5D359D7718FEE45B00F2B14A /* CoreData.framework in Frameworks */,
+				5D359D7518FEE45B00F2B14A /* UIKit.framework in Frameworks */,
+				5D359D7118FEE45B00F2B14A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D359D8A18FEE45B00F2B14A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D359D8F18FEE45B00F2B14A /* XCTest.framework in Frameworks */,
+				5D359D9218FEE45B00F2B14A /* CoreData.framework in Frameworks */,
+				5D359D9118FEE45B00F2B14A /* UIKit.framework in Frameworks */,
+				5D359D9018FEE45B00F2B14A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D359D6418FEE45B00F2B14A = {
+			isa = PBXGroup;
+			children = (
+				5D359D7818FEE45B00F2B14A /* CaliforniaClubs */,
+				5D359D9518FEE45B00F2B14A /* CaliforniaClubsTests */,
+				5D359D6F18FEE45B00F2B14A /* Frameworks */,
+				5D359D6E18FEE45B00F2B14A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D359D6E18FEE45B00F2B14A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D359D6D18FEE45B00F2B14A /* CaliforniaClubs.app */,
+				5D359D8D18FEE45B00F2B14A /* CaliforniaClubsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D359D6F18FEE45B00F2B14A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DA3956B19038547009C0B3B /* CoreLocation.framework */,
+				5DA395691903853E009C0B3B /* MapKit.framework */,
+				5D359D7018FEE45B00F2B14A /* Foundation.framework */,
+				5D359D7218FEE45B00F2B14A /* CoreGraphics.framework */,
+				5D359D7418FEE45B00F2B14A /* UIKit.framework */,
+				5D359D7618FEE45B00F2B14A /* CoreData.framework */,
+				5D359D8E18FEE45B00F2B14A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D359D7818FEE45B00F2B14A /* CaliforniaClubs */ = {
+			isa = PBXGroup;
+			children = (
+				5D3F395A192C874E004958FF /* Not needed */,
+				5D5D4502190B80250094B0D5 /* iPad */,
+				5D359DAA18FF158200F2B14A /* Club.h */,
+				5D359DAB18FF158200F2B14A /* Club.m */,
+				5D359D8118FEE45B00F2B14A /* AppDelegate.h */,
+				5D359D8218FEE45B00F2B14A /* AppDelegate.m */,
+				5D79FE6E190F83FD00F6B574 /* HomeViewController.h */,
+				5D79FE6F190F83FD00F6B574 /* HomeViewController.m */,
+				5D9E5DB91900EF0000E5A9EE /* Data.h */,
+				5D9E5DBA1900EF0000E5A9EE /* Data.m */,
+				5DA395661903850B009C0B3B /* MBMapPin.h */,
+				5DA395671903850B009C0B3B /* MBMapPin.m */,
+				5D359D8718FEE45B00F2B14A /* Images.xcassets */,
+				5D359D8418FEE45B00F2B14A /* CaliforniaClubs.xcdatamodeld */,
+				5D5D4503190B82F90094B0D5 /* Storyboard_ipad.storyboard */,
+				5DAB0F3B190C6735001C3637 /* LocationViewController.h */,
+				5DAB0F3C190C6735001C3637 /* LocationViewController.m */,
+				5DC06A1619079C6000B4CD96 /* MoreTableViewController.h */,
+				5DC06A1719079C6000B4CD96 /* MoreTableViewController.m */,
+				5DA3956D19038795009C0B3B /* PinViewController.h */,
+				5DA3956E19038795009C0B3B /* PinViewController.m */,
+				5D359DA718FF0C8D00F2B14A /* MapListTableTableViewController.h */,
+				5D359DA818FF0C8D00F2B14A /* MapListTableTableViewController.m */,
+				5D359D7918FEE45B00F2B14A /* Supporting Files */,
+			);
+			path = CaliforniaClubs;
+			sourceTree = "<group>";
+		};
+		5D359D7918FEE45B00F2B14A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D359D7A18FEE45B00F2B14A /* CaliforniaClubs-Info.plist */,
+				5D359D7B18FEE45B00F2B14A /* InfoPlist.strings */,
+				5D359D7E18FEE45B00F2B14A /* main.m */,
+				5D359D8018FEE45B00F2B14A /* CaliforniaClubs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D359D9518FEE45B00F2B14A /* CaliforniaClubsTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D359D9B18FEE45B00F2B14A /* CaliforniaClubsTests.m */,
+				5D359D9618FEE45B00F2B14A /* Supporting Files */,
+			);
+			path = CaliforniaClubsTests;
+			sourceTree = "<group>";
+		};
+		5D359D9618FEE45B00F2B14A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D359D9718FEE45B00F2B14A /* CaliforniaClubsTests-Info.plist */,
+				5D359D9818FEE45B00F2B14A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D3F395A192C874E004958FF /* Not needed */ = {
+			isa = PBXGroup;
+			children = (
+				5D79FE6B190F06C800F6B574 /* UserClubBookmark.h */,
+				5D79FE6C190F06C800F6B574 /* UserClubBookmark.m */,
+				5D359DA518FEE62200F2B14A /* Storyboard.storyboard */,
+				5D07063D18FFAF120006D518 /* MapViewController.h */,
+				5D07063E18FFAF120006D518 /* MapViewController.m */,
+			);
+			name = "Not needed";
+			sourceTree = "<group>";
+		};
+		5D5D4502190B80250094B0D5 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D359D6C18FEE45B00F2B14A /* CaliforniaClubs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D359D9F18FEE45B00F2B14A /* Build configuration list for PBXNativeTarget "CaliforniaClubs" */;
+			buildPhases = (
+				5D359D6918FEE45B00F2B14A /* Sources */,
+				5D359D6A18FEE45B00F2B14A /* Frameworks */,
+				5D359D6B18FEE45B00F2B14A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaliforniaClubs;
+			productName = CaliforniaClubs;
+			productReference = 5D359D6D18FEE45B00F2B14A /* CaliforniaClubs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D359D8C18FEE45B00F2B14A /* CaliforniaClubsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D359DA218FEE45B00F2B14A /* Build configuration list for PBXNativeTarget "CaliforniaClubsTests" */;
+			buildPhases = (
+				5D359D8918FEE45B00F2B14A /* Sources */,
+				5D359D8A18FEE45B00F2B14A /* Frameworks */,
+				5D359D8B18FEE45B00F2B14A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D359D9418FEE45B00F2B14A /* PBXTargetDependency */,
+			);
+			name = CaliforniaClubsTests;
+			productName = CaliforniaClubsTests;
+			productReference = 5D359D8D18FEE45B00F2B14A /* CaliforniaClubsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D359D6518FEE45B00F2B14A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Mark Brautigam";
+				TargetAttributes = {
+					5D359D8C18FEE45B00F2B14A = {
+						TestTargetID = 5D359D6C18FEE45B00F2B14A;
+					};
+				};
+			};
+			buildConfigurationList = 5D359D6818FEE45B00F2B14A /* Build configuration list for PBXProject "CaliforniaClubs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5D359D6418FEE45B00F2B14A;
+			productRefGroup = 5D359D6E18FEE45B00F2B14A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D359D6C18FEE45B00F2B14A /* CaliforniaClubs */,
+				5D359D8C18FEE45B00F2B14A /* CaliforniaClubsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D359D6B18FEE45B00F2B14A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D359D7D18FEE45B00F2B14A /* InfoPlist.strings in Resources */,
+				5D359D8818FEE45B00F2B14A /* Images.xcassets in Resources */,
+				5D359DA618FEE62200F2B14A /* Storyboard.storyboard in Resources */,
+				5D5D4504190B82F90094B0D5 /* Storyboard_ipad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D359D8B18FEE45B00F2B14A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D359D9A18FEE45B00F2B14A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D359D6918FEE45B00F2B14A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC06A1819079C6000B4CD96 /* MoreTableViewController.m in Sources */,
+				5D359D8318FEE45B00F2B14A /* AppDelegate.m in Sources */,
+				5DA395681903850B009C0B3B /* MBMapPin.m in Sources */,
+				5DAB0F3D190C6735001C3637 /* LocationViewController.m in Sources */,
+				5D359DAC18FF158200F2B14A /* Club.m in Sources */,
+				5D359D8618FEE45B00F2B14A /* CaliforniaClubs.xcdatamodeld in Sources */,
+				5D07063F18FFAF120006D518 /* MapViewController.m in Sources */,
+				5D79FE6D190F06C800F6B574 /* UserClubBookmark.m in Sources */,
+				5D9E5DBB1900EF0000E5A9EE /* Data.m in Sources */,
+				5D359D7F18FEE45B00F2B14A /* main.m in Sources */,
+				5D359DA918FF0C8D00F2B14A /* MapListTableTableViewController.m in Sources */,
+				5DA3956F19038795009C0B3B /* PinViewController.m in Sources */,
+				5D79FE70190F83FD00F6B574 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D359D8918FEE45B00F2B14A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D359D9C18FEE45B00F2B14A /* CaliforniaClubsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D359D9418FEE45B00F2B14A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D359D6C18FEE45B00F2B14A /* CaliforniaClubs */;
+			targetProxy = 5D359D9318FEE45B00F2B14A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D359D7B18FEE45B00F2B14A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D359D7C18FEE45B00F2B14A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5D359D9818FEE45B00F2B14A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D359D9918FEE45B00F2B14A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D359D9D18FEE45B00F2B14A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5D359D9E18FEE45B00F2B14A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D359DA018FEE45B00F2B14A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaliforniaClubs/CaliforniaClubs-Prefix.pch";
+				INFOPLIST_FILE = "CaliforniaClubs/CaliforniaClubs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = CaliforniaClubs;
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5D359DA118FEE45B00F2B14A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaliforniaClubs/CaliforniaClubs-Prefix.pch";
+				INFOPLIST_FILE = "CaliforniaClubs/CaliforniaClubs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = CaliforniaClubs;
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5D359DA318FEE45B00F2B14A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CaliforniaClubs.app/CaliforniaClubs";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaliforniaClubs/CaliforniaClubs-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CaliforniaClubsTests/CaliforniaClubsTests-Info.plist";
+				PRODUCT_NAME = CaliforniaClubsTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5D359DA418FEE45B00F2B14A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CaliforniaClubs.app/CaliforniaClubs";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaliforniaClubs/CaliforniaClubs-Prefix.pch";
+				INFOPLIST_FILE = "CaliforniaClubsTests/CaliforniaClubsTests-Info.plist";
+				PRODUCT_NAME = CaliforniaClubsTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D359D6818FEE45B00F2B14A /* Build configuration list for PBXProject "CaliforniaClubs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D359D9D18FEE45B00F2B14A /* Debug */,
+				5D359D9E18FEE45B00F2B14A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D359D9F18FEE45B00F2B14A /* Build configuration list for PBXNativeTarget "CaliforniaClubs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D359DA018FEE45B00F2B14A /* Debug */,
+				5D359DA118FEE45B00F2B14A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D359DA218FEE45B00F2B14A /* Build configuration list for PBXNativeTarget "CaliforniaClubsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D359DA318FEE45B00F2B14A /* Debug */,
+				5D359DA418FEE45B00F2B14A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5D359D8418FEE45B00F2B14A /* CaliforniaClubs.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5D359D8518FEE45B00F2B14A /* CaliforniaClubs.xcdatamodel */,
+			);
+			currentVersion = 5D359D8518FEE45B00F2B14A /* CaliforniaClubs.xcdatamodel */;
+			path = CaliforniaClubs.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5D359D6518FEE45B00F2B14A /* Project object */;
+}
