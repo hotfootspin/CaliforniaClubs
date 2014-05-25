@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" variant="6xAndEarlier" propertyAccessControl="none" initialViewController="AvP-3n-ESp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="AvP-3n-ESp">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -10,7 +10,7 @@
             <objects>
                 <tableViewController id="qyF-5H-Vzg" customClass="MoreTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="h0J-qu-6tq">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.9647059440612793" green="0.92156869173049927" blue="0.82352948188781738" alpha="1" colorSpace="deviceRGB"/>
                         <label key="tableHeaderView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zKp-LR-dqW">
@@ -79,26 +79,26 @@
             <objects>
                 <tableViewController id="MMJ-TG-Dui" customClass="MapListTableTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="BcW-yh-RVI">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="HWC-Zk-CY1" detailTextLabel="uTL-31-WRC" style="IBUITableViewCellStyleSubtitle" id="ZUd-QU-hZJ">
-                                <rect key="frame" x="0.0" y="22" width="768" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZUd-QU-hZJ" id="q8p-dc-43E">
-                                    <rect key="frame" x="0.0" y="0.0" width="748" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="735" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HWC-Zk-CY1">
-                                            <rect key="frame" x="10" y="3" width="34" height="22"/>
+                                            <rect key="frame" x="15" y="3" width="34" height="22"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uTL-31-WRC">
-                                            <rect key="frame" x="10" y="25" width="43" height="15"/>
+                                            <rect key="frame" x="15" y="25" width="43" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                             <color key="textColor" red="0.17254901959999999" green="0.33725490200000002" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -131,11 +131,11 @@
             <objects>
                 <viewController id="KaO-La-gKG" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qi2-nY-bHp">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thar" id="vSP-xS-FXN">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Square Dance Clubs" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="krh-2z-Qrb">
@@ -148,9 +148,10 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UTh-PL-WtP">
-                                <rect key="frame" x="377" y="734" width="321" height="48"/>
+                                <rect key="frame" x="376" y="798" width="321" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.65098039215686276" green="0.32156862745098042" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="60" maxX="0.0" maxY="-60"/>
                                 <state key="normal" title="View a list of clubs">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -160,9 +161,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1AZ-nJ-pJl">
-                                <rect key="frame" x="377" y="794" width="321" height="48"/>
+                                <rect key="frame" x="376" y="858" width="321" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.65238360969999998" green="0.32196932989999999" blue="0.1333891515" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="60" maxX="0.0" maxY="-60"/>
                                 <state key="normal" title="View a map of locations">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -172,9 +174,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CxK-of-2wv">
-                                <rect key="frame" x="377" y="854" width="321" height="48"/>
+                                <rect key="frame" x="376" y="918" width="321" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.65238360969999998" green="0.32196932989999999" blue="0.1333891515" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="60" maxX="0.0" maxY="-60"/>
                                 <state key="normal" title="Find locations near me">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -209,7 +212,7 @@
             <objects>
                 <viewController id="37o-0O-Dua" customClass="LocationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9TR-c2-lB3">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thar" id="1T9-qy-LX4">
@@ -217,7 +220,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="egC-gz-9Ku">
-                                <rect key="frame" x="20" y="135" width="277" height="44"/>
+                                <rect key="frame" x="15" y="166" width="277" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.59215688710000003" green="0.33725491169999999" blue="0.2941176593" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Use my current location">
@@ -229,9 +232,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JU0-Gw-gC0">
-                                <rect key="frame" x="471" y="110" width="277" height="44"/>
+                                <rect key="frame" x="471" y="166" width="277" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.59215688710000003" green="0.33725491169999999" blue="0.2941176593" alpha="1" colorSpace="deviceRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="60" maxX="0.0" maxY="-60"/>
                                 <state key="normal" title="Go">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -241,7 +245,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rlO-cX-fK4">
-                                <rect key="frame" x="20" y="197" width="277" height="44"/>
+                                <rect key="frame" x="15" y="228" width="277" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.59215688710000003" green="0.33725491169999999" blue="0.2941176593" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Use my previous location">
@@ -253,15 +257,17 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ikU-o5-LQ4">
-                                <rect key="frame" x="471" y="57" width="277" height="30"/>
+                                <rect key="frame" x="471" y="113" width="277" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="60" maxX="0.0" maxY="-60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a location:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I0L-aA-I5i">
-                                <rect key="frame" x="471" y="20" width="277" height="22"/>
+                                <rect key="frame" x="471" y="76" width="277" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="60" maxX="0.0" maxY="-60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -443,11 +449,11 @@
             <objects>
                 <viewController id="Czy-5Z-dIH" customClass="PinViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nbt-hl-WTj">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="ObA-1l-dch">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                         </subviews>
@@ -488,12 +494,12 @@
         <image name="thar" width="1318" height="1600"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="rfj-NJ-m8f"/>
         <segue reference="zhQ-Ke-M5U"/>
-        <segue reference="bpd-Mf-H4l"/>
     </inferredMetricsTieBreakers>
 </document>

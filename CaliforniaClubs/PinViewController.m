@@ -17,10 +17,10 @@
 // Crescent City 42, -124
 // San Diego 32, -117
 // Needles 34, -114
-#define US_CENTER_LAT 37.0
+#define US_CENTER_LAT 37.5
 #define US_CENTER_LON -119.0
-#define US_SPAN_LAT 9.0
-#define US_SPAN_LON 9.0
+#define US_SPAN_LAT 12.0
+#define US_SPAN_LON 10.0
 
 @interface PinViewController ()
 
