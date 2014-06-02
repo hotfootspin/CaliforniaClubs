@@ -10,6 +10,9 @@
 #import "MapListTableTableViewController.h"
 #import "Data.h"
 
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+
 @interface LocationViewController ()
 
 @end
@@ -64,6 +67,56 @@
     
     // This causes an immediate segue we don't want
     // [self.locationManager startUpdatingLocation];
+    
+    [self placeLevelButtons];
+}
+
+- (void) placeLevelButtons {
+    if ([[UIDevice currentDevice] orientation] == UIInterfaceOrientationLandscapeRight||[[UIDevice currentDevice] orientation] == UIInterfaceOrientationLandscapeLeft) {
+        UIView *v = (UIView*)[[[self view] subviews] objectAtIndex:13];
+        [v.layer setMasksToBounds:YES];
+        [v.layer setCornerRadius:8.0f];
+        [v.layer setBorderColor:[UIColor whiteColor].CGColor];
+        [v.layer setBorderWidth:1.0f];
+        v.hidden = NO;
+
+        /*
+        for (int i=13; i<18; ++i) {
+            UIButton *b = (UIButton*)[[[self view] subviews] objectAtIndex:i];
+            CGRect f = b.frame;
+            NSLog(@"Frame is %f %f", f.origin.x, f.origin.y);
+            f.origin.x = 827;
+            f.origin.y = 414+32*(i-13);
+            if (SYSTEM_VERSION_LESS_THAN(@"7.0")) {
+                f.origin.x -= 20;
+                f.origin.y -= 32;
+            }
+            NSLog(@"Frame is %f %f", f.origin.x, f.origin.y);
+            b.frame = f;
+            // [b setBounds:CGRectMake(b.bounds.origin.x+400, b.bounds.origin.y-400, b.bounds.size.width, b.bounds.size.height)];
+        }
+         */
+    }
+    else {
+        UIView *v = (UIView*)[[[self view] subviews] objectAtIndex:13];
+        v.hidden = YES;
+        /*
+        for (int i=13; i<18; ++i) {
+            UIButton *b = (UIButton*)[[[self view] subviews] objectAtIndex:i];
+            CGRect f = b.frame;
+            NSLog(@"Frame is %f %f", f.origin.x, f.origin.y);
+            f.origin.x = 410;
+            f.origin.y = 762+32*(i-13);
+            NSLog(@"Frame is %f %f", f.origin.x, f.origin.y);
+            b.frame = f;
+        }
+         */
+    }
+}
+
+-(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)orientation duration:(NSTimeInterval)duration
+{
+    [self placeLevelButtons];
 }
 
 - (void) viewWillAppear:(BOOL)animated

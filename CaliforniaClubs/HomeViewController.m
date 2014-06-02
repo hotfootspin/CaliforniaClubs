@@ -69,6 +69,46 @@
         else
             [b.layer replaceSublayer:[b.layer.sublayers objectAtIndex:0] with:grad];
     }
+    
+    // [self orient];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self orient];
+}
+
+- (void) hide:(int) index hide:(BOOL) hidden
+{
+    UIView *v = (UIView*)[[[self view] subviews] objectAtIndex:index];
+    v.hidden = hidden;
+}
+
+- (void) orient {
+    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+    // if (UIInterfaceOrientationIsLandscape(orientation)) {
+    if ([[UIDevice currentDevice] orientation] == UIInterfaceOrientationLandscapeRight||[[UIDevice currentDevice] orientation] == UIInterfaceOrientationLandscapeLeft) {
+        [self hide:1 hide:YES];
+        [self hide:5 hide:YES];
+        [self hide:6 hide:NO];
+        [self hide:7 hide:NO];
+    }
+    else {
+        [self hide:1 hide:NO];
+        [self hide:5 hide:NO];
+        [self hide:6 hide:YES];
+        [self hide:7 hide:YES];
+    }
+}
+
+-(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)orientation duration:(NSTimeInterval)duration
+{
+    [self orient];
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscape);
 }
 
 - (void)didReceiveMemoryWarning
