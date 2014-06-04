@@ -527,7 +527,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="rfj-NJ-m8f"/>
         <segue reference="zhQ-Ke-M5U"/>
+        <segue reference="bpd-Mf-H4l"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -171,6 +171,7 @@
 				5DA395671903850B009C0B3B /* MBMapPin.m */,
 				5D359D8718FEE45B00F2B14A /* Images.xcassets */,
 				5D359D8418FEE45B00F2B14A /* CaliforniaClubs.xcdatamodeld */,
+				5D359DA518FEE62200F2B14A /* Storyboard.storyboard */,
 				5D5D4503190B82F90094B0D5 /* Storyboard_ipad.storyboard */,
 				5DAB0F3B190C6735001C3637 /* LocationViewController.h */,
 				5DAB0F3C190C6735001C3637 /* LocationViewController.m */,
@@ -219,7 +220,6 @@
 			children = (
 				5D79FE6B190F06C800F6B574 /* UserClubBookmark.h */,
 				5D79FE6C190F06C800F6B574 /* UserClubBookmark.m */,
-				5D359DA518FEE62200F2B14A /* Storyboard.storyboard */,
 				5D07063D18FFAF120006D518 /* MapViewController.h */,
 				5D07063E18FFAF120006D518 /* MapViewController.m */,
 			);
